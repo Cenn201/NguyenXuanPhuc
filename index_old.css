@@ -1,0 +1,227 @@
+.header {
+  color: white;
+}
+.header_banner {
+  position: absolute;
+  width: 100%;
+  height: 720;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+/* header_top */
+.header_top {
+  position: relative;
+}
+
+.header_top .top_text {
+  font-family: K2D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-family: K2D;
+}
+.header_top .icon {
+  width: 24px;
+  height: 24px;
+}
+.header_top .top_wed {
+  display: flex;
+}
+.line {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.header_mid {
+  position: relative;
+  padding: 10px 0;
+}
+.header_mid .container {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+.header_mid .navbar-nav {
+  display: flex;
+}
+.header_mid .navbar-nav .nav-item .nav-link {
+  padding: 0 45px !important;
+}
+.header_mid .navbar-nav .nav-item .home {
+  padding-left: 0 !important;
+  color: #56bcf8;
+}
+.header_mid .navbar-nav .nav-item a {
+  color: white;
+  text-decoration: none;
+}
+.header_mid .search {
+  display: flex;
+  height: 24px;
+  padding-left: 70px;
+}
+.header_mid .search input {
+  display: none;
+}
+/* CSS để hiển thị search_text khi có lớp 'active' */
+.header_mid .search input.active {
+  display: block;
+}
+.header_mid .navbar-toggler {
+  padding: 0;
+}
+.header_mid .fa-bars {
+  font-size: 24px !important;
+}
+
+.header_bottom 
+{
+    position: relative;
+}
+.header_bottom .header_bottom_1
+{
+    margin-top: 183px;
+    margin-bottom: 60px;
+}
+.header_bottom .text_1
+{
+    
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-commissioner);
+  font-weight: 600;
+  height: 50px;
+}
+.header_bottom .text_2
+{
+    
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+}
+.header_bottom .text_3
+{
+    margin: 28px 0;
+    font-size: 36px;
+    font-family: var(--font-allura);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    
+.header_top .top_text {
+    font-family: K2D;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+    .header_top .top_wed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: unset;
+  }
+  .header_top .icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px 0;
+  }
+  .header_mid .navbar {
+    position: fixed !important;
+    bottom: 0;
+    left: 10px;
+    padding: 0;
+  }
+  .header_mid .navbar-toggler {
+    padding: 0 !important;
+  }
+  .header_mid .navbar-toggler:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+    padding: 0;
+  }
+  .header_mid .navbar-nav .nav-item a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .header_mid .navbar-nav .nav-item .nav-link {
+    padding: 5px 5px !important;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .header_mid .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
+
+  .header_mid .search {
+    background-color: #56bcf8;
+    align-items: center;
+    height: 30px;
+  }
+  
+.header_bottom .header_bottom_1
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header_bottom .text_1
+{
+    
+  font-size: var(--font-size-base);
+  font-family: var(--font-commissioner);
+  font-weight: 600;
+  height: 20px;
+}
+.header_bottom .text_2
+{
+    
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+.header_bottom .text_3
+{
+    margin: 8px 0;
+    font-size: 16px;
+    font-family: var(--font-allura);
+}
+
+}
